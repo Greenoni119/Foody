@@ -8,7 +8,7 @@ function Navbar() {
 
       <Link href="/">
         <h1 className=' m-2 p-2 float-left clear-right text-3xl text-red-600'>
-          FOOD'y
+          FOOD&apos;y
         </h1>
       </Link>
    

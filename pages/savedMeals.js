@@ -34,13 +34,13 @@ function SavedMeals() {
             );
           }
           return (
-            <div>
-            <Link href={`/meals/${data.idMeal}`} key={data.idMeal}>
-              <div className='flex justify-center p-10'>
-                <h1 className=' p-5 border-4 border-red-600 rounded-full text-4xl text-red-400 hover:text-red-600 transition duration-150' variant="secondary" >{data.strMeal}</h1>
-              </div>
-            </Link>
-            </div>
+            <div key={data.idMeal}>
+  <Link href={`/meals/${data.idMeal}`}>
+    <div className='flex justify-center p-10'>
+      <h1 className='p-5 border-4 border-red-600 rounded-full text-4xl text-red-400 hover:text-red-600 transition duration-150' variant="secondary" >{data.strMeal}</h1>
+    </div>
+  </Link>
+</div>
           );
         })}
       </div>
@@ -50,3 +50,13 @@ function SavedMeals() {
 }
 
 export default SavedMeals;
+{/*
+<div>
+            <Link href={`/meals/${data.idMeal}`} key={data.idMeal}>
+              <div className='flex justify-center p-10'>
+                <h1 className=' p-5 border-4 border-red-600 rounded-full text-4xl text-red-400 hover:text-red-600 transition duration-150' variant="secondary" >{data.strMeal}</h1>
+              </div>
+            </Link>
+            </div>
+
+*/}
