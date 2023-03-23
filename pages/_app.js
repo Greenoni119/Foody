@@ -32,8 +32,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>FOOD'y</title>
-        <meta name="description" content="food'y is a listing website of recipes" />
+        <title>FOOD&apos;y</title>
+        <meta name="description" content="food&apos;y is a listing website of recipes" />
       </Head>
       <QueryClientProvider client={queryClient}>
         <Toaster
