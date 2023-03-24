@@ -8,7 +8,7 @@ function ButtonWithLink({ link = '/', children, variant = 'secondary' }) {
     <Link href={link}>
       <span
         type="button"
-        className='border-8 border-red-400 rounded-full text-5xl p-5 text-stone-600 hover:border-8 hover:border-red-500 hover:text-stone-700 transition duration-150'
+        className='border-8 border-red-400 rounded-full text-xl p-5 text-stone-600 hover:border-8 hover:border-red-500 hover:text-stone-700 transition duration-150 md:text-5xl'
       >
         {children}
       </span>

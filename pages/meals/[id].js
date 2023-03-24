@@ -115,9 +115,9 @@ function SingleMeals() {
         <IngredientsTable ingredientsWithMeasures={ingredientsWithMeasures} />
       </div>
       <div className='mx-auto pt-10 pb-10 max-w-7xl' >
-        <h1 className='text-5xl text-red-600 ml-6 pb-5'>Instructions</h1>
+        <h1 className='text-3xl text-red-600 ml-6 pb-5'>Instructions</h1>
         {data.strInstructions.split('.').filter((sentence) => sentence !== '').map((sentence) => (
-          <p className='text-xl text-stone-500 m-5 text-left pb-15' key={sentence}>
+          <p className='text-lg text-stone-500 m-5 text-left pb-15' key={sentence}>
             {sentence}
             .
           </p>

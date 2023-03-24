@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import BeatLoader from 'react-spinners/BeatLoader';
+import PulseLoader from 'react-spinners/PulseLoader';
 import SearchBar from '../../components/mealsPage/SearchBar';
 import SingleMealCard from '../../components/mealsPage/SingleMealCard';
 import { motion } from 'framer-motion';
@@ -73,12 +73,12 @@ function Meals() {
 //----------------------------------------------------------------------------------------------------------
   return (
     <div> 
-      <div className='pt-60'>
+      <div className='pt-20'>
       <SearchBar searchText={searchText} setSearchText={setSearchText} />
       </div>
       {isLoading || categoryIsLoading ? (
         <div className='text-center pt-60'>
-          <BeatLoader color="#D3494E" loading={isLoading || categoryIsLoading} size={20} />
+          <PulseLoader color="#D3494E" loading={isLoading || categoryIsLoading} size={20} />
         </div>
       ) : null}
  <div>
@@ -101,7 +101,7 @@ function Meals() {
 
             {data && queriedData && data.length === 0 && queriedData.length === 0 && (
               <div className=''>
-              <h1 className='text-center pt-60 text-6xl text-stone-600'>No meals found</h1>
+              <h1 className='text-center pt-20 text-6xl text-stone-600'>No meals found</h1>
               </div>
               
             )}
